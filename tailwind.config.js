@@ -11,6 +11,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      'inter': ['inter','sans-self'],
+    },
   },
   plugins: [],
 };
