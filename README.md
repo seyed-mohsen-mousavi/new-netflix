@@ -1,7 +1,7 @@
 # new-netflix
 
 ## tools
-Tailwind node modules
+Tailwind node modules:
 ```sh
 npm install
 ```
