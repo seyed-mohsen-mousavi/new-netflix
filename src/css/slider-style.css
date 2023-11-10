@@ -3,26 +3,38 @@
     background-size: cover;
 }
 
-.swiper-pagination {
+#pagination {
     position: absolute;
-    top: 10px;
-    right: 10px;
     width: auto !important;
     left: auto !important;
     margin: 0;
+    right: 3%;
+    bottom: 10%;
 }
 
 .swiper-pagination-bullet {
-    border-radius: 2px;
+    border-radius: 8px;
     width: auto;
     height: 30px;
     opacity: 1;
+    transition: ease-in-out .1s;
 }
 
 .swiper-pagination-bullet-active {
     color: #fff;
     background: #ffffff36;
-    border: 3px solid #ffffff33;
+    border: 2px solid #ffffff13;
     box-sizing: border-box;
     box-shadow: 0px 0px 2px;
+}
+
+#watch {
+    font-kerning: none;
+}
+/* animation slider */
+.swiper-slide-active h1 {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fade-up 1s both;
+}.swiper-slide-active button:nth-child(2) {
+    animation: jump .5s both;
 }

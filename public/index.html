@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -191,14 +191,83 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="font-inter text-sm p-3 bg-[#61606067] w-10">
-                40XP
+            <div class="swiper-slide ">
+              <div class="font-inter text-sm m-8 flex gap-1">
+                <p class="bg-[#61606067] py- px-2 text-[0.6rem] rounded-2xl text-center text-[#ffffffba]">40XP</p>
+                <div class="flex ml-1">
+                  <img src="../src/img/avatar/girl1.jpg" class="rounded-full w-4 h-4" alt="">
+                  <img src="../src/img/avatar/girl2.jpg" class="rounded-full w-4 h-4 " alt="">
+                  <img src="../src/img/avatar/man2avif.avif" class="rounded-full w-4 h-4 " alt="">
+                </div>
+                <p class="text-[0.5rem] text-[#ffffffba]"> +5 friends are watching</p>
+              </div>
+              <div class="absolute cursor-default flex flex-col bottom-10 left-9 gap-4">
+                <h1 class="text-3xl font-bold ">Bladerunner 2049</h1>
+                <p class="text-[0.6rem] text-[#ffffffba] pb-1">98% Match</p>
+                <div class="flex">
+                  <button class="bg-redi shadow-xl shadow-redi text-[0.7rem] py-3 px-5 rounded-xl transition duration-150 ease-in-out hover:bg-[#ad2328] hover:shadow-[#ad2328]"
+                    id="watch">Watch</button>
+                  <button id="add-favarite" class="bg-[#ffffff25] backdrop-blur-lg px-2 ml-3 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide ">
+              <div class="font-inter text-sm m-8 flex gap-1">
+                <p class="bg-[#61606067] py- px-2 text-[0.6rem] rounded-2xl text-center text-[#ffffffba] ">10XP</p>
+                <div class="flex ml-1">
+                  <img src="../src/img/avatar/girl1.jpg" class="rounded-full w-4 h-4" alt="">
+                  <img src="../src/img/avatar/girl2.jpg" class="rounded-full w-4 h-4 " alt="">
+                  <img src="../src/img/avatar/man2avif.avif" class="rounded-full w-4 h-4 " alt="">
+                </div>
+                <p class="text-[0.5rem] text-[#ffffffba]"> +5 friends are watching</p>
+              </div>
+              <div class="absolute cursor-default flex flex-col bottom-10 left-9 gap-4">
+                <h1 class="text-3xl font-bold">Lucifer</h1>
+                <p class="text-[0.6rem] text-[#ffffffba] pb-1">90% Match</p>
+                <div class="flex">
+                  <button class="bg-redi shadow-xl shadow-redi text-[0.7rem] py-3 px-5 rounded-xl transition duration-150 ease-in-out hover:bg-[#ad2328] hover:shadow-[#ad2328]"
+                    id="watch">Watch</button>
+                  <button id="add-favarite" class="bg-[#ffffff25] backdrop-blur-lg px-2 ml-3 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="font-inter text-sm m-8 flex gap-1">
+                <p class="bg-[#61606067] py- px-2 text-[0.6rem] rounded-2xl text-center text-[#ffffffba] ">20XP</p>
+                <div class="flex ml-1">
+                  <img src="../src/img/avatar/girl1.jpg" class="rounded-full w-4 h-4" alt="">
+                  <img src="../src/img/avatar/girl2.jpg" class="rounded-full w-4 h-4 " alt="">
+                  <img src="../src/img/avatar/man2avif.avif" class="rounded-full w-4 h-4 " alt="">
+                </div>
+                <p class="text-[0.5rem] text-[#ffffffba]"> +5 friends are watching</p>
+              </div>
+              <div class="absolute cursor-default flex flex-col bottom-10 left-9 gap-4">
+                <h1 class="text-3xl font-bold">Money Heist </h1>
+                <p class="text-[0.6rem] text-[#ffffffba] pb-1">95% Match</p>
+                <div class="flex">
+                  <button class="bg-redi shadow-xl shadow-redi text-[0.7rem] py-3 px-5 rounded-xl transition duration-150 ease-in-out hover:bg-[#ad2328] hover:shadow-[#ad2328]"
+                    id="watch">Watch</button>
+                  <button id="add-favarite" class="bg-[#ffffff25] backdrop-blur-lg px-2 ml-3 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination" id="pagination"></div>
         </div>
       </div>
       <div id="comment"></div>
