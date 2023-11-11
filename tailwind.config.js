@@ -15,6 +15,9 @@ module.exports = {
     fontFamily: {
       inter: ["inter", "sans-self"],
     },
+    screens: {
+      '3xl': '2000px',
+    },
   },
   plugins: [
     require('tailwindcss-animated')
