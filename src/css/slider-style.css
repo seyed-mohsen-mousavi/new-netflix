@@ -38,3 +38,21 @@
 }.swiper-slide-active button:nth-child(2) {
     animation: jump .5s both;
 }
+#small-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 10px;
+    border-radius: 550px; 
+    background: #767b79;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+  }
+  
+  #small-range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #767b79;
+    cursor: pointer;
+  }
