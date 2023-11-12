@@ -48,22 +48,8 @@ const avatarFriend = [
 ];
 
 const avatarBtn = document.querySelectorAll(".friend");
-
-avatarFriend.forEach((e) => {
-  avatarBtn[e.id - 1].style.backgroundImage = "url(" + e.src + ")";
-  if(e.isonline){
-    console.log(avatarBtn[e.id -1].firstElementChild.classList.remove("hidden"));
-  }
-});
-
 const slider = document.querySelectorAll(".swiper-slide");
 const sliderimg = document.querySelectorAll("#img-slider");
-
-slider[0].style.backgroundImage = "url(" + imgList[0].src + ")";
-slider[1].style.backgroundImage = "url(" + imgList[1].src + ")";
-slider[2].style.backgroundImage = "url(" + imgList[2].src + ")";
-
-// config Swiper
 const swiper = new Swiper(".img", {
   pagination: {
     el: ".img .swiper-pagination",
@@ -75,3 +61,19 @@ const swiper = new Swiper(".img", {
     },
   },
 });
+const pageContent = document.querySelector(".container")
+avatarFriend.forEach((e) => {
+  avatarBtn[e.id - 1].style.backgroundImage = "url(" + e.src + ")";
+  if(e.isonline){
+    console.log(avatarBtn[e.id -1].firstElementChild.classList.remove("hidden"));
+  }
+});
+
+slider[0].style.backgroundImage = "url(" + imgList[0].src + ")";
+slider[1].style.backgroundImage = "url(" + imgList[1].src + ")";
+slider[2].style.backgroundImage = "url(" + imgList[2].src + ")";
+
+// config Swiper
+
+
+// -------------

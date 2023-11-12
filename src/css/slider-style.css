@@ -35,9 +35,19 @@
 .swiper-slide-active h1 {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: fade-up 1s both;
-}.swiper-slide-active button:nth-child(2) {
-    animation: jump .5s both;
 }
+@keyframes fade-up {
+
+    0% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #small-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
