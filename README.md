@@ -15,6 +15,10 @@ npm i tailwindcss-animated
 
 
 ## Preview
+<<<<<<< HEAD
 <img src="./src/img/new-Netflix.png" alt="">
+=======
+<img src="./src/img/new-Netflix.png" alt="" width="800">
+>>>>>>> 5e994b69bfff06dfc19056fb3951a2f91b907130
 
 *if you like it please give me a star, good luck*
