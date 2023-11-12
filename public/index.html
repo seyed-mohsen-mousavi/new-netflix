@@ -137,7 +137,7 @@
       </ul>
     </div>
     <!-- section main slider in script.js -->
-    <div class="p-7">
+    <div class="p-7 hidden" id="main">
       <!-- Header  =>=> -->
       <div id="header" class="flex items-center justify-between">
         <div class="flex items-center">
@@ -364,12 +364,9 @@
           <p
             class="bg-[#51515194] py- px-2 text-[0.6rem] rounded-2xl left-1 top-2 text-center text-[#ffffffad] absolute">
             10XP</p>
-          <img src="../src/img/haunting of hill house.jpeg" alt="" class="w-full h-[6.5rem] rounded-t-2xl hidden" id="histori">
-          <div class="flex space-x-4 animate-pulse loading">
-            <div class="flex-1 space-y-4">
-              <div class="w-full h-[6.5rem] bg-gray-400 rounded-t-2xl"></div>
-            </div>
-          </div>
+          <img src="../src/img/haunting of hill house.jpeg" alt="" class="w-full h-[6.5rem] rounded-t-2xl   "
+            >
+
           <div class="relative">
             <div class="w-full h-[2px] bg-[#ffffff3c]"></div>
             <span class="absolute w-[5%] h-[2px] bg-[#d81f26b0] top-0" id="watched"></span>
@@ -381,12 +378,8 @@
           <p
             class="bg-[#51515194] py- px-2 text-[0.6rem] rounded-2xl left-1 top-2 text-center text-[#ffffffad] absolute">
             10XP</p>
-          <img src="../src/img/Ratched.webp" alt="" class="w-full h-[6.5rem] rounded-t-2xl hidden" id="histori">
-          <div class="flex space-x-4 animate-pulse loading">
-            <div class="flex-1 space-y-4">
-              <div class="w-full h-[6.5rem] bg-gray-400 rounded-t-2xl"></div>
-            </div>
-          </div>
+          <img  src="../src/img/Ratched.webp" alt="" class="w-full h-[6.5rem] rounded-t-2xl image">
+
           <div class="relative">
             <div class="w-full h-[2px] bg-[#ffffff3c]"></div>
             <span class="absolute w-[20%] h-[2px] bg-[#d81f26b0] top-0" id="watched"></span>
@@ -398,12 +391,9 @@
           <p
             class="bg-[#51515194] py- px-2 text-[0.6rem] rounded-2xl left-1 top-2 text-center text-[#ffffffad] absolute">
             30XP</p>
-          <img src="../src/img/aka.jpg" alt="" class="w-full h-[6.5rem] rounded-t-2xl hidden" id="histori">
-          <div class="flex space-x-4 animate-pulse loading">
-            <div class="flex-1 space-y-4">
-              <div class="w-full h-[6.5rem] bg-gray-400 rounded-t-2xl"></div>
-            </div>
-          </div>
+          <img src="../src/img/aka.jpg" alt="" class="w-full h-[6.5rem] rounded-t-2xl  image"
+            >
+
           <div class="relative">
             <div class="w-full h-[2px] bg-[#ffffff3c]"></div>
             <span class="absolute w-[70%] h-[2px] bg-[#d81f26b0] top-0" id="watched"></span>
@@ -415,12 +405,9 @@
           <p
             class="bg-[#51515194] py- px-2 text-[0.6rem] rounded-2xl left-1 top-2 text-center text-[#ffffffad] absolute">
             20XP</p>
-          <img src="../src/img/troll.jpg" alt="" class="w-full h-[6.5rem] rounded-t-2xl hidden" id="histori">
-          <div class="flex space-x-4 animate-pulse loading">
-            <div class="flex-1 space-y-4">
-              <div class="w-full h-[6.5rem] bg-gray-400 rounded-t-2xl"></div>
-            </div>
-          </div>
+          <img src="../src/img/troll.jpg" alt="" class="w-full h-[6.5rem] rounded-t-2xl image"
+            >
+
           <div class="relative">
             <div class="w-full h-[2px] bg-[#ffffff3c]"></div>
             <span class="absolute w-[50%] h-[2px] bg-[#d81f26b0] top-0" id="watched"></span>
@@ -429,6 +416,19 @@
         </div>
       </div>
 
+    </div>
+    <div class="flex items-center justify-center w-full h-full" id="Loading">
+      <div class="flex justify-center items-center space-x-1 text-sm text-white mr-20">
+         
+            <svg fill='none' class="w-6 h-6 animate-spin" viewBox="0 0 32 32" xmlns='http://www.w3.org/2000/svg'>
+              <path clip-rule='evenodd'
+                d='M15.165 8.53a.5.5 0 01-.404.58A7 7 0 1023 16a.5.5 0 011 0 8 8 0 11-9.416-7.874.5.5 0 01.58.404z'
+                fill='currentColor' fill-rule='evenodd' />
+            </svg>
+    
+         
+        <div>Loading ...</div>
+      </div>
     </div>
     <!-- section Right img src in script.js -->
     <div class="bg-[#1b1c20]  p-5 px-7 flex flex-col gap-7 justify-center absolute h-full right-0">
