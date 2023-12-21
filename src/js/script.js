@@ -78,10 +78,11 @@ slider[2].style.backgroundImage = "url(" + imgList[2].src + ")";
 
 // -------------
 
-window.onload = ()=>{
+window.onload = () => {
   loading.classList.add("hidden");
   mainContent.classList.remove("hidden");
-  console.log("loaded");
-}
-console.log(mainContent);
-console.log(loading);
+  setTimeout(() => {
+    document.getElementById("container").style.visibility = "hidden";
+    document.getElementById("container").style.opacity = "0";
+  }, 4500);
+};
