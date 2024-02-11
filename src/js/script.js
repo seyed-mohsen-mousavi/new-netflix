@@ -1,13 +1,7 @@
-const imgList = [
-  {
-    src: "../src/img/Bladerunner.jpg",
-  },
-  {
-    src: "../src/img/lusifer.jpg",
-  },
-  {
-    src: "../src/img/mony-honey.jpg",
-  },
+const imgListSlider = [
+  "../src/img/Bladerunner.jpg",
+  "../src/img/lusifer.jpg",
+  "../src/img/mony-honey.jpg",
 ];
 const avatarFriend = [
   {
@@ -56,23 +50,21 @@ const swiper = new Swiper(".img", {
     el: ".img .swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return (
-        '<img class="' + className + '" src="' + imgList[index].src + '"' + ">"
-      );
+      return `<img src="${imgListSlider[index]}" class="${className}">`;
     },
   },
 });
 const pageContent = document.querySelector(".container");
 avatarFriend.forEach((e) => {
-  avatarBtn[e.id - 1].style.backgroundImage = "url(" + e.src + ")";
+  avatarBtn[e.id - 1].style.backgroundImage = `url(${e.src})`;
   if (e.isonline) {
     avatarBtn[e.id - 1].firstElementChild.classList.remove("hidden");
   }
 });
 
-slider[0].style.backgroundImage = "url(" + imgList[0].src + ")";
-slider[1].style.backgroundImage = "url(" + imgList[1].src + ")";
-slider[2].style.backgroundImage = "url(" + imgList[2].src + ")";
+for (let i = 0; i < 3; i++) {
+  slider[i].style.backgroundImage = "url(" + imgListSlider[i] + ")";
+}
 
 // config Swiper
 
@@ -86,3 +78,9 @@ window.onload = () => {
     document.getElementById("container").style.opacity = "0";
   }, 4500);
 };
+
+let wachedEl = document.querySelectorAll("#watched");
+
+wachedEl.forEach((e) => {
+  console.log(e.classList.add(`w-[${e.dataset.watched}]`));
+});
